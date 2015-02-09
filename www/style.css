@@ -1,0 +1,27 @@
+.opacity-nav {
+	position: fixed;
+	width: 100%;
+	padding-right: 30px;
+	z-index: 100;
+}
+.title {
+	position: absolute;
+	top: 50%;
+	color: white;
+	font-size: 50pt;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 400px;
+}
+
+.about-section {
+
+}
+
+section {
+	background-color: white;
+	padding: 100px;
+}
+.playerBox {
+
+}
