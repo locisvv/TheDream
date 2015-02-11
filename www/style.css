@@ -5,13 +5,17 @@
 	z-index: 100;
 }
 .title {
+	font-family: 'Oleo Script', cursive;
 	position: absolute;
-	top: 50%;
 	color: white;
 	font-size: 50pt;
-	margin-left: auto;
-  	margin-right: auto;
-  	width: 400px;
+  	left: 10%;
+	right: 10%;
+	top: 30%;
+}
+.title-author {
+	margin-left: 200px;
+	font-size: 30pt;
 }
 
 .about-section {
@@ -24,4 +28,20 @@ section {
 }
 .playerBox {
 
+}
+.styled-title{
+	font-family: 'Oleo Script', cursive;
+	font-size: 40pt;
+}
+.styled-subtitle{
+	font-family: 'Oleo Script', cursive;
+	font-size: 25pt;
+}
+.styled-text{
+	font-style: italic;
+	font-size: 25pt;
+}
+.styled-subtext{
+	font-style: italic;
+	font-size: 18pt;
 }
