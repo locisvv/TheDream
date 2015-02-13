@@ -9,10 +9,14 @@ footer {
 	background-color: white;
 	padding: 20px;
 }
+form {
+	width: 500px;
+}
 .opacity-nav {
 	position: fixed;
 	width: 100%;
 	padding-right: 30px;
+	font-style: italic;
 	z-index: 100;
 }
 .title {
@@ -22,11 +26,22 @@ footer {
 	font-size: 45pt;
   	left: 10%;
 	right: 10%;
-	top: 30%;
+	top: 25%;
 }
 .title-author {
 	margin-left: 200px;
 	font-size: 25pt;
+}
+.languages {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	background: none;
+	color: white;
+}
+.languages:hover,
+.languages:focus {
+	color: #ccc;
+	background: none;
 }
 .img-background {
 	position: fixed;

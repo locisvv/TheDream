@@ -10,37 +10,44 @@
     <link href="style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700&subset=cyrillic,cyrillic-ext,latin,latin-ext' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+
+  <body id="home">
     <nav class="opacity-nav navbar navbar-default" 
       role="navigation"
       data-700="opacity: 0;"
       data-900="opacity: 0.6;">
 
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#">
-            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-          </a>
-        </li>
+        <li><a data-scroll href="#home">Home</a></li>
+        <li><a data-scroll href="#team">Team</a></li>
+        <li><a data-scroll href="#technologies">Technologies</a></li>
+        <li><a data-scroll href="#works">Works</a></li>
+        <li><a data-scroll href="#contact-us">Contact us</a></li>
       </ul>
     </nav>
     
-    <header>
+    <header >
       <div class="title">
         <p class="text-center">"I have a dream...</p>
         <p class="text-center">...I have a dream today"</p>
         <p class="text-center title-author" >Martin Luther King, Jr.</p>
+        
+        <div class="container text-center">
+          <div class="btn-group" role="group" >
+            <button type="button" class="languages btn btn-default">ENG</button>
+            <button type="button" class="languages btn btn-default">UAN</button>
+            <button type="button" class="languages btn btn-default">HUN</button>
+            <button type="button" class="languages btn btn-default">RUS</button>
+
+          </div>
+        </div>
       </div>
+
       <img src="imgs/macbook-air-all-faded-and-stuff.jpg" class="img-background img-responsive">
     </header>
 
     <section class="about-section">
-      <h1 class="text-center styled-title">I have a dream today</h1>
+      <h1 class="text-center styled-title">"I have a dream today"</h1>
       <p class="text-center styled-text">У кожного із нас є мрії. Мрії до яких ми рухаємося семимильними або сантиметровими кроками, але рухаємося. Ми віримо що шлях до світлого майбутнього пролягає лише через наші спільні зусилля. І як би це пафонсо не звучало, але це правда і разом ми зможемо зробити це</p>
     </section>
 
@@ -87,7 +94,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="team">
       <h1 class="text-center styled-title">The Dream team</h1>
       <p class="text-center styled-text">Команда мрійників які хочуть допомогти Вам</p>
       <br>
@@ -96,29 +103,24 @@
         <div class="row">
           <div class="col-xs-8 col-md-4">
             <img src="imgs/avatar.png" class="img-circle center-block avatar">
-            <h3 class="text-center styled-subtitle">Spachynskij Vasya</h3>
-            <p class="text-center styled-subtext">Java, Android and WEB developer</p>
-          </div>
-          <div class="col-xs-8 col-md-4">
-            <img src="imgs/avatar.png" class="img-circle center-block avatar">
             <h3 class="text-center styled-subtitle">Ruslan Harahonuch</h3>
             <p class="text-center styled-subtext">Ruby on Rails and WEB developer</p>
           </div>
           <div class="col-xs-8 col-md-4">
             <img src="imgs/avatar.png" class="img-circle center-block avatar">
-            <h3 class="text-center styled-subtitle">Spachynskij Vasya</h3>
+            <h3 class="text-center styled-subtitle">Parlah Volodya</h3>
             <p class="text-center styled-subtext">IOS and WEB developer</p>
           </div>
-          
+          <div class="col-xs-8 col-md-4">
+            <img src="imgs/avatar.png" class="img-circle center-block avatar">
+            <h3 class="text-center styled-subtitle">Spachynskij Vasya</h3>
+            <p class="text-center styled-subtext">Java, Android and WEB developer</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h1 class="text-center styled-title">Works</h1>
-    </section>
-
-    <section>
+    <section id="technologies">
       <h1 class="text-center styled-title">Technologies</h1>
       <br>   <br>    <br>
       <div class="center-block container">
@@ -145,23 +147,33 @@
       </div>
     </section>
 
-    <section>
+    <section id="works">
+      <h1 class="text-center styled-title">Works</h1>
+    </section>
+
+    <section id='contact-us'>
       <h1 class="text-center styled-title">Contact us</h1>
-      <div class="container">
-        <form role="form">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name">
-          </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form role="form">
+            <div class="form-group ">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
 
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Email">
-          </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
 
-          <textarea class="form-control" rows="3" placeholder="What do you want to ask us? "></textarea>
-          <br>
-          <button type="button" class="center-block btn btn-default button-text">Submit</button>
+            <textarea class="form-control" 
+              rows="3" 
+              placeholder="What do you want to ask us?">
+            </textarea>
+            <br>
+            <button type="button" 
+              class="center-block btn btn-default button-text">Submit</button>
+          </form>
         </div>
-      </form>
+      </div>  
     </section>
     <img src="imgs/one-day2.jpg" class="footer-image img-responsive">
 
@@ -170,10 +182,14 @@
       <p class="text-center styled-text">Одного дня ми будемо мати достатньо досвіду і ресурсів щоб працювати лише на свої мрії.</p>  
     </div>
     <p class="text-center">Copyright © 2015</p>
+
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>
     <script src="bower_components/jquery.mb.ytplayer/inc/jquery.mb.YTPlayer.js">
     </script>
+
     <script src="libs/skrollr.min.js"></script>
 
     <script src="script.js"></script>
