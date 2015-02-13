@@ -9,9 +9,11 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700&subset=cyrillic,cyrillic-ext,latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script src="bower_components/angular/angular.js"></script>
   </head>
 
-  <body id="home">
+  <body id="home" ng-app="app" ng-controller="LanguageCtrl">
     <nav class="opacity-nav navbar navbar-default" 
       role="navigation"
       data-700="opacity: 0;"
@@ -34,10 +36,18 @@
         
         <div class="container text-center">
           <div class="btn-group" role="group" >
-            <button type="button" class="languages btn btn-default">ENG</button>
-            <button type="button" class="languages btn btn-default">UAN</button>
-            <button type="button" class="languages btn btn-default">HUN</button>
-            <button type="button" class="languages btn btn-default">RUS</button>
+<!--             <button type="button"
+              class="languages btn btn-default"
+              ng-click="setLanguage('eng')">ENG</button> -->
+            <button type="button"
+              class="languages btn btn-default"
+              ng-click="setLanguage('uan')">UAN</button>
+<!--             <button type="button"
+              class="languages btn btn-default"
+              ng-click="setLanguage('hun')">HUN</button> -->
+            <button type="button"
+              class="languages btn btn-default"
+              ng-click="setLanguage('rus')">RUS</button>
 
           </div>
         </div>
@@ -48,7 +58,7 @@
 
     <section class="about-section">
       <h1 class="text-center styled-title">"I have a dream today"</h1>
-      <p class="text-center styled-text">У кожного із нас є мрії. Мрії до яких ми рухаємося семимильними або сантиметровими кроками, але рухаємося. Ми віримо що шлях до світлого майбутнього пролягає лише через наші спільні зусилля. І як би це пафонсо не звучало, але це правда і разом ми зможемо зробити це</p>
+      <p class="text-center styled-text">{{language.about}}</p>
     </section>
 
     <section class="first-step">
@@ -58,7 +68,7 @@
           data-center="left: 0px; opacity: 1">
           <img class="center-block" src="icons/paper_plane.png" class="img-rounded">
           <h1 class="text-center styled-title">Have you a dream?</h1>
-          <p class="text-center styled-text">Зробіть перший крок! Розкажіть нам про вашу мрію за чашкою запашної кави</p>
+          <p class="text-center styled-text">{{language.first_step}}</p>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -69,7 +79,7 @@
           data-center="left: -50px; opacity: 1">
           <img class="center-block"src="icons/light_bulb.png" class="img-rounded">
           <h1 class="text-center styled-title">Wath's your dream?</h1>
-          <p class="text-center styled-text">Ваше бачення ідеї ми втілюємо в технічному плані, який разом узгоджуємо</p>
+          <p class="text-center styled-text">{{language.second_step}}</p>
         </div>
       </div>
       <div class="row">
@@ -78,7 +88,7 @@
           data-center="left: 0px; opacity: 1">
           <img class="center-block"src="icons/pencil.png" class="img-rounded">
           <h1 class="text-center styled-title">How it's work?</h1>
-          <p class="text-center styled-text">Під час роботи ативно спілкуємося і ділимося результатами</p>
+          <p class="text-center styled-text">{{language.third_step}}</p>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -89,14 +99,14 @@
           data-center="left: -50px; opacity: 1">
           <img class="center-block"src="icons/check_mark.png" class="img-rounded">
           <h1 class="text-center styled-title">Success!</h1>
-          <p class="text-center styled-text">Реліз проекту в зазначений час і подальша його підтримка</p>
+          <p class="text-center styled-text">{{language.fourth_step}}</p>
         </div>
       </div>
     </section>
 
     <section id="team">
       <h1 class="text-center styled-title">The Dream team</h1>
-      <p class="text-center styled-text">Команда мрійників які хочуть допомогти Вам</p>
+      <p class="text-center styled-text">{{language.dream_team}}</p>
       <br>
       <br>
       <div class="container">
@@ -129,19 +139,19 @@
             <img class="center-block" src="icons/html2.png" >
             <br>
             <h3 class="text-center styled-subtitle">WEB</h3>
-            <p class="text-center styled-subtext">Розробка сучасних потужних WEB застосунків і сайтів</p>
+            <p class="text-center styled-subtext">{{language.web_tech}}</p>
           </div>
           <div class="col-md-4">
             <img class="center-block" src="icons/android2.png" >
             <br>
             <h3 class="text-center styled-subtitle">Mobile</h3>
-            <p class="text-center styled-subtext">Ми підримуємо весь стек розробки під мобільні платформи </p>
+            <p class="text-center styled-subtext">{{language.mobile_tech}}</p>
           </div>
           <div class="col-md-4">
             <img class="center-block" src="icons/personal5.png" >
             <br>
             <h3 class="text-center styled-subtitle">Decstop</h3>
-            <p class="text-center styled-subtext">Хочемо мати досвід у створенні настільного програмного забезпечення</p>
+            <p class="text-center styled-subtext">{{language.desktop_tech}}</p>
           </div>
         </div>
       </div>
@@ -179,10 +189,9 @@
 
     <div class="one-day-block">
       <h1 class="text-center styled-title">One day</h1>
-      <p class="text-center styled-text">Одного дня ми будемо мати достатньо досвіду і ресурсів щоб працювати лише на свої мрії.</p>  
+      <p class="text-center styled-text">{{language.one_day}}</p>  
     </div>
     <p class="text-center">Copyright © 2015</p>
-
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
