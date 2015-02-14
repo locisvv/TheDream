@@ -1,6 +1,6 @@
 require 'sinatra'
 
-set :public_folder, 'www'
+set :public_folder, 'app'
 set :bind, 'localhost'
 
 get '/html' do
