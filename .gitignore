@@ -2,6 +2,4 @@ app/bower_component/*
 app/node_modules/*
 
 app/package.json
-app/Gruntfile.js
-app/bower.json
 app/npm-debug.log
