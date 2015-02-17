@@ -1,9 +1,5 @@
-header {
-	height: 300px;
-}
 section {
 	background-color: white;
-	padding: 10px;
 }
 footer {
 	background-color: white;
@@ -17,6 +13,9 @@ h1, h2, h3, .button-text, .title {
 }
 p, a {
 	font-style: italic;
+}
+.row.my-row {
+	padding-bottom: 1em; 
 }
 .opacity-nav {
 	position: fixed;
@@ -54,7 +53,11 @@ p, a {
 	z-index: -100;
 }*/
 .button-text {
-	font-size: 20pt;
+	font-size: 15pt;
+}
+.about-section{
+	width: 70%;
+	margin-bottom: 50px;
 }
 .avatar {
 	width: 130px;
@@ -87,9 +90,6 @@ p, a {
 
 
 @media (min-width: 768px) {
-	header {
-		height: 700px;
-	}
 	section {
 		background-color: white;
 		padding: 70px;
@@ -105,7 +105,7 @@ p, a {
 		top: 25%;
 	}
 	form {
-		width: 500px;
+		width: 50%;
 	}
 	.avatar {
 		width: 200px;

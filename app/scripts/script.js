@@ -1,5 +1,8 @@
 $(function () {
-  skrollr.init();
+  if (!skrollr.isMobile) {
+    skrollr.init();  
+  }
+  
   smoothScroll.init();
 });
 
