@@ -86,7 +86,7 @@ p, a {
 }
 
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
 	header {
 		height: 700px;
 	}
@@ -144,7 +144,7 @@ p, a {
 	.row {
 		max-width: 1000px;
 	}
-}*/
+}
 
 .row {
 	position: relative;
