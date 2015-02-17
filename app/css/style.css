@@ -1,5 +1,5 @@
 header {
-	height: 400px;
+	height: 300px;
 }
 section {
 	background-color: white;
@@ -27,17 +27,17 @@ p, a {
 .title{
 	position: absolute;
 	color: white;
-	font-size: 20pt;
+	font-size: 15pt;
   	left: 10%;
 	right: 10%;
-	top: 15%;
-}
-.slogan {
-	font-style: normal;
+	top: 5%;
 }
 .title-author {
 	margin-left: 20px;
-	font-size: 15pt;
+	font-size: 10pt;
+}
+.slogan {
+	font-style: normal;
 }
 .languages {
 	font-size: 13px;
@@ -56,24 +56,27 @@ p, a {
 .button-text {
 	font-size: 20pt;
 }
-.avatar{
+.avatar {
 	width: 130px;
 	height: 130px;
 }
 
-.styled-title{
-	font-size: 25pt;
+.step-img {
+	height: 50px;
 }
-.styled-subtitle{
+.styled-title {
 	font-size: 15pt;
 }
-.styled-text{
+.styled-subtitle {
+	font-size: 15pt;
+}
+.styled-text {
 	font-size: 10pt;
 }
-.styled-subtext{
+.styled-subtext {
 	font-size: 8pt;
 }
-.one-day-block{
+.one-day-block {
 	color: black;
 	padding-top: 100px;
 }
@@ -95,7 +98,7 @@ p, a {
 		width: 100%;
 		padding-right: 30px;
 	}
-	.title{
+	.title {
 		font-size: 30pt;
 	  	left: 10%;
 		right: 10%;
@@ -104,11 +107,11 @@ p, a {
 	form {
 		width: 500px;
 	}
-	.avatar{
+	.avatar {
 		width: 200px;
 		height: 200px;
 	}
-	.title{
+	.title {
 		font-size: 45pt;
 		top: 25%;
 	}
@@ -119,19 +122,22 @@ p, a {
 	.languages {
 		font-size: 20px;
 	}
-	.styled-title{
+	.step-img {
+		height: 100px;
+	}
+	.styled-title {
 		font-size: 35pt;
 	}
-	.styled-subtitle{
+	.styled-subtitle {
 		font-size: 20pt;
 	}
-	.styled-text{
+	.styled-text {
 		font-size: 20pt;
 	}
-	.styled-subtext{
+	.styled-subtext {
 		font-size: 20pt;
 	}
-	.one-day-block{
+	.one-day-block {
 		color: black;
 		padding-top: 200px;
 	}
