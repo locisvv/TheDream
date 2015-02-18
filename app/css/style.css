@@ -14,6 +14,17 @@ h1, h2, h3, .button-text, .title {
 p, a {
 	font-style: italic;
 }
+.title-parallax-window {
+	height: 600px;
+}
+.parallax-window {
+	height: 400px;
+}
+.parallax-window > section {
+	background-color: transparent;
+	color: white;
+	padding: 50px;
+}
 .row.my-row {
 	padding-bottom: 1em; 
 }
@@ -26,14 +37,14 @@ p, a {
 .title{
 	position: absolute;
 	color: white;
-	font-size: 15pt;
+	font-size: 30pt;
   	left: 10%;
 	right: 10%;
-	top: 5%;
+	top: 30%;
 }
 .title-author {
 	margin-left: 20px;
-	font-size: 10pt;
+	font-size: 20pt;
 }
 .slogan {
 	font-style: normal;
@@ -89,8 +100,10 @@ p, a {
 
 @media (min-width: 768px) {
 	section {
-		background-color: white;
 		padding: 70px;
+	}
+	.parallax-window {
+		height: 600px;
 	}
 	.opacity-nav {
 		width: 100%;
@@ -132,7 +145,6 @@ p, a {
 	.row {
 		max-width: 1000px;
 	}
-
 }
 
 .row {

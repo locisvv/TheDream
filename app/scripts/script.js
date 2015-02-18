@@ -1,6 +1,4 @@
-$(function () {
-  skrollr.init();  
-  
+$(function () { 
   smoothScroll.init();
 });
 
